@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Shopping Cart with Promo Codes</title>
+    </head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Shopping Cart</h1>
+            <p>Add products to your cart and apply promo codes for discounts</p>
+        </header>
+        
+        <div class="cart-container">
+            <div class="items-container">
+                <div class="cart-item">
+                    <div class="item-image">ITEM 1</div>
+                    <div class="item-details">
+                        <div class="item-name">Wireless Headphones</div>
+                        <div class="item-price">$59.99</div>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus-btn">-</button>
+                            <span class="quantity">1</span>
+                            <button class="quantity-btn plus-btn">+</button>
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-item">
+                    <div class="item-image">ITEM 2</div>
+                    <div class="item-details">
+                        <div class="item-name">Smart Watch</div>
+                        <div class="item-price">$89.99</div>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus-btn">-</button>
+                            <span class="quantity">1</span>
+                            <button class="quantity-btn plus-btn">+</button>
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cart-item">
+                    <div class="item-image">ITEM 3</div>
+                    <div class="item-details">
+                        <div class="item-name">Phone Case</div>
+                        <div class="item-price">$19.99</div>
+                        <div class="quantity-controls">
+                            <button class="quantity-btn minus-btn">-</button>
+                            <span class="quantity">1</span>
+                            <button class="quantity-btn plus-btn">+</button>
+                            <button class="remove-btn">Remove</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                
+                <div class="summary-item">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$169.97</span>
+                </div>
+                
+                <div class="summary-item">
+                    <span>Shipping:</span>
+                    <span>$10.00</span>
+                </div>
+                
+                <div class="summary-item discount">
+                    <span>Discount:</span>
+                    <span id="discount-value">-$0.00</span>
+                </div>
+                
+                <div class="summary-item summary-total">
+                    <span>Total:</span>
+                    <span id="total">$179.97</span>
+                </div>
+                
+                <div class="promo-section">
+                    <h3>Apply Promo Code</h3>
+                    <p>Available codes: ostad10 (10% off) or ostad50 (50% off)</p>
+                    <input type="text" class="promo-input" placeholder="Enter promo code" id="promo-code">
+                    <button class="apply-btn" id="apply-promo">Apply Promo Code</button>
+                    <div id="promo-message"></div>
+                </div>
+                
+                <button class="checkout-btn">Proceed to Checkout</button>
+                <script src="script.js"></script>
+            </div>
+        </div>
+    </div>
